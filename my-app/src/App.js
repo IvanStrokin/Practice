@@ -1,13 +1,14 @@
-import './App.css';
-import Component from './Component';
-import Array from './Array';
+import All_Buttons from './Buttons/AllButtons/AllButtons';
+import Array_Func from './Array/Array';
+import Out_Start from './OutPut/Output';
+
 
 function App() {
   return (
-    <div className="App">
-      <Component/>
-      <Array/>
-    </div>
+    <body>
+      <All_Buttons />
+      <Out_Start arr = {Array_Func}/>
+    </body>
   );
 }
 

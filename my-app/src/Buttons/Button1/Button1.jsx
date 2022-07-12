@@ -1,17 +1,8 @@
 import React from 'react';
 
-const Button1 = ({ oldArrey }) => {
-  const Start_Addition = () => {
-    const new_arry = oldArrey.unshift(4); //????
-    alert(new_arry);
-  }
-
-  return (
-    <button
-      onClick={() => { Start_Addition() }}>
-      "Удалить первый элемент массива"
-    </button>
-  )
+const Start_Addition = ({ oldArrey }) => {
+  const new_array = oldArrey.unshift(4);
+  return (new_array)
 }
 
-export default Button1;
+export default Start_Addition;
